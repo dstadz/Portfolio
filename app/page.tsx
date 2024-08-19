@@ -13,7 +13,7 @@ export default function Page() {
         I'm always eager to explore new technologies, with a knack for understanding user needs and crafting solutions that make a difference.
       </p>
       <div className="my-8">
-        <BlogPosts />
+        {/* <BlogPosts /> */}
       </div>
     </section>
   )
