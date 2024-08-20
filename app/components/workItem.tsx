@@ -1,43 +1,13 @@
 import Link from 'next/link'
-import { formatDate, getWorkItems } from 'app/blog/utils'
+import { formatDate } from 'app/blog/utils'
 import Image from 'next/image'
+import { workObject } from 'app/data/work'
 
+const workList = Object
+  .keys(workObject)
+  .map(slug => ({ slug, ...workObject[slug] }) )
 
-const workList = [
-  {
-    company: 'Bumblebee Spaces',
-    position: 'Software Engineer',
-    description: ' Modular robotic furniture designed to maximize space efficiency.',
-    url: 'https://bumblebeespaces.com/',
-    slug: 'bumblebee',
-    date: '',
-    tech: '',
-    location: 'San Francisco, CA',
-  },
-  {
-    company: 'Greenspark Software',
-    position: 'Software Engineer',
-    description: 'Inventory and business management platforms for recycling plants and scrap yards.',
-    url: 'https://www.greensparksoftware.com/',
-    slug: 'greenspark',
-    date: '',
-    tech: '',
-    location: 'Brooklyn, NY (Remote)',
-  },
-  {
-    company: 'Accelery AI',
-    position: 'Software Engineer',
-    description: 'Modernizing businesses by developing next-generation software solutions and leveraging artificial intelligence technology',
-    url: 'https://www.accelery.ai/',
-    slug: 'accelery',
-    date: '',
-    tech: '',
-    location: 'Ausin, TX (Remote)',
-  },
-
-]
 export function WorkItems() {
-  let allWorkItems = getWorkItems()
 
   return (
     <div>
@@ -45,7 +15,7 @@ export function WorkItems() {
           <Link
             key={work.company}
             className="flex flex-col w-50 space-y-1 mb-4"
-            href={`/projects/${work.slug}`}
+            href={`/work/${work.slug}`}
           >
             <div className="flex justify-start items-center bg-gray-100">
               <Image
