@@ -24,6 +24,9 @@ export default function Page() {
       <div className="my-8">
         {work.detail}
       </div>
+      <div className="my-8">
+        Gallery
+      </div>
     </section>
   )
 }
