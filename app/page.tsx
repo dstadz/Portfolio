@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <section>
       <h1 className="mb-8 text-2xl font-semibold tracking-tighter">
-        My Portfolio
+      Daniel Stadlers Portfolio
       </h1>
       <p className="mb-4">
         I'm a software engineer with a passion for creating clean, efficient code and seamless user experiences.
