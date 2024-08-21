@@ -12,6 +12,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
   title: {
     default: 'Daniel Stadlers Portfolio',
+    template: '%s | Daniel Stadlers Portfolio',
   },
   description: 'Daniel Stadlers portfolio.',
   openGraph: {
