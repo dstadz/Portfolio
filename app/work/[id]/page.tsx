@@ -25,7 +25,7 @@ export default function Page() {
       </div>
       <div className="my-8">
         Gallery
-        {work.gallery.map(({ img, alt, desc }) => (
+        {work?.gallery?.map(({ img, alt, desc }) => (
           <div className="bg-gray-600 mb-8 p-4 rounded-lg">
             <Image
               src={`/image/${img}`}
