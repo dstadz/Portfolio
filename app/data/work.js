@@ -23,12 +23,13 @@ export const workObject = {
     gallery: [
       {
         img: 'pay and print.png',
-        alt: 'Pay and Print button',
+        alt: 'Pay and Print',
         desc: 'I developed a Pay and Print button that allows users to process incoming materials, pay the customer and print their receipts without leaving the screen. This feature was adopted by 90% of our users in the first week',
       },
       {
-        img: '/images/greenspark/2.png',
-        alt: 'Greenspark Software - 2'
+        img: 'gssSalesOrder.jpg',
+        alt: 'Duplicate Contract was an idea I implemented while ',
+        desc: ' I created the Duplicate feature for sales and purchase orders after asking for feeeback from our customers. This button saved our users up to 80% of the time they spend on writing up new contracts.',
       },
       {
         img: '/images/greenspark/3.png',
