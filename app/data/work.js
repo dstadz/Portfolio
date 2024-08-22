@@ -31,10 +31,10 @@ export const workObject = {
         alt: 'Duplicate Contract was an idea I implemented while ',
         desc: ' I created the Duplicate feature for sales and purchase orders after asking for feeeback from our customers. This button saved our users up to 80% of the time they spend on writing up new contracts.',
       },
-      {
-        img: '/images/greenspark/3.png',
-        alt: 'Greenspark Software - 3'
-      },
+      // {
+      //   img: '/images/greenspark/3.png',
+      //   alt: 'Greenspark Software - 3'
+      // },
     ]
   },
   accelery: {
