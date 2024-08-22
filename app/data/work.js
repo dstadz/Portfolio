@@ -20,6 +20,21 @@ export const workObject = {
     location: 'Brooklyn, NY (Remote)',
     detail: 'GreenSpark Software taught me the art of balancing performance and user experience. By integrating customer feedback directly into development, I realized how vital it is to tailor software to real-world needs. My time here also emphasized the importance of clean, efficient code and the benefits it brings to development speed and application performance. I enhanced my expertise in React and AWS, mastering the deployment of robust and user-friendly platforms. This role was a pivotal point in learning how to turn technical challenges into opportunities for innovation.',
     value: 'During my time at GreenSpark Software, I improved customer engagement by optimizing key UI components and integrating customer feedback through the ChurnZero API. This led to a 75% increase in app efficiency and a 25% boost in development speed. My efforts in reducing duplicate code and enhancing API calls made our processes more efficient, directly improving user satisfaction. Additionally, my experience with AWS and React allowed me to deploy robust, user-friendly platforms that met the real-world needs of our customers.',
+    gallery: [
+      {
+        img: 'pay and print.png',
+        alt: 'Pay and Print button',
+        desc: 'I developed a Pay and Print button that allows users to process incoming materials, pay the customer and print their receipts without leaving the screen. This feature was adopted by 90% of our users in the first week',
+      },
+      {
+        img: '/images/greenspark/2.png',
+        alt: 'Greenspark Software - 2'
+      },
+      {
+        img: '/images/greenspark/3.png',
+        alt: 'Greenspark Software - 3'
+      },
+    ]
   },
   accelery: {
     company: 'Accelery AI',
