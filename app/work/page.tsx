@@ -1,4 +1,4 @@
-import { WorkItems } from 'app/components/workItem'
+import { WorkItems } from '@/components/workItem'
 
 export default function Page() {
   return (
