@@ -1,5 +1,7 @@
 import Link from 'next/link'
 
+const isProd = process.env.NODE_ENV === 'production'
+
 const navItems = {
   '/': {
     name: 'home',
@@ -7,9 +9,15 @@ const navItems = {
   '/work': {
     name: 'work',
   },
-  // '/blog': {
-  //   name: 'blog',
+  '/contact': {
+    name: 'contact',
+  },
+  // '/about': {
+  //   name: 'about',
   // },
+  ...(isProd ? {} : { '/projects': {
+    name: 'projects',
+  } }),
 }
 
 export function Navbar() {
