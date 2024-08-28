@@ -1,8 +1,8 @@
-import { BlogPosts } from 'app/components/posts'
+import { BlogPosts } from '@/components/posts'
 
 export default function Page() {
   return (
-    <section>
+    <section className="bg-grey-900">
       <h1 className="mb-8 text-2xl font-semibold tracking-tighter">
       Daniel Stadlers Portfolio
       </h1>
