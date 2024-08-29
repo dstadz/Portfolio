@@ -1,9 +1,8 @@
 "use client"
 
 import Link from 'next/link'
-import { formatDate } from 'app/blog/utils'
 import Image from 'next/image'
-import { workObject } from 'app/data/work'
+import { workObject } from '@/public/data/work'
 import { useState } from 'react'
 
 const workList = Object
@@ -37,7 +36,6 @@ export function WorkItems() {
             <div className="flex flex-col flex-1 ml-4">
               <p className="text-neutral-600 dark:text-neutral-100">
               {work.position} at {work.company}
-                {/* {formatDate(work.metadata.publishedAt, false)} */}
               </p>
               <span>
                 {work.date} {work.location}

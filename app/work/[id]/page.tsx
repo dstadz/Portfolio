@@ -2,7 +2,7 @@
 // pages/posts/[id].js
 import { useRouter } from 'next/navigation'
 import { useParams } from 'next/navigation'
-import { workObject } from 'app/data/work'
+import { workObject } from '@/public/data/work'
 import Image from 'next/image'
 
 export default function Page() {
