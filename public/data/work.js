@@ -36,6 +36,7 @@ export const workObject = {
     location: 'Ausin, TX (Remote)',
     detail: 'At Accelery Ai, I dived deep into the world of AI, discovering how powerful machine learning models can be when paired with efficient software engineering practices. I learned the importance of cross-functional collaboration, especially when building scalable platforms. Working with Next.js and the OpenAI API was a game-changer, sharpening my skills in modern web technologies and expanding my understanding of AI integration. This experience reinforced the value of thorough testing and debugging, ensuring that the solutions we delivered were both reliable and impactful.',
     value: 'At Accelery Ai, I significantly enhanced our AI capabilities by leading the development of an AI-powered solution that increased model accuracy by 25% and reduced development time by 15%. By collaborating closely with a cross-functional team, I helped build a scalable platform that improved product efficiency by 30%. My work with Next.js and the OpenAI API not only deepened my expertise in modern web technologies but also contributed directly to the delivery of reliable and impactful solutions.',
+    gallery: [],
   },
   bumblebee: {
     company: 'Bumblebee Spaces',
@@ -47,5 +48,6 @@ export const workObject = {
     location: 'San Francisco, CA',
     detail: 'Bumblebee Spaces was where I truly saw how technology can transform everyday living spaces. I learned how to merge hardware and software seamlessly, making user-centric designs that felt almost magical in their efficiency. Implementing features like Auto-Discover and integrating Stripe API for preorder processes taught me the importance of optimizing user flows and reducing friction in customer interactions. This role solidified my ability to modernize app architectures and create intuitive, delightful user experiences.',
     value: 'At Bumblebee Spaces, I added value by integrating the Stripe API, which doubled preorders and streamlined the purchasing process. I also implemented the Auto-Discover feature, reducing installation time by 20% and significantly enhancing the user experience. By modernizing the app architecture, I improved code usability and collaborated with designers to create intuitive user flows that boosted customer satisfaction by 40%. This role allowed me to deliver tangible improvements that directly benefited both the company and its customers.',
+    gallery: [],
   },
 }

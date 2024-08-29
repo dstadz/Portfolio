@@ -1,13 +1,15 @@
 "use client"
 
-import Link from 'next/link'
 import Image from 'next/image'
 import { workObject } from '@/public/data/work'
 import { useState } from 'react'
 
-const workList = Object
-  .keys(workObject)
-  .map(slug => ({ slug, ...workObject[slug] }) )
+const workList = Object.keys(workObject).map((slug) => {
+  const key = slug as keyof typeof workObject
+
+  return { slug: key, ...workObject[key] }
+})
+
 
 export function WorkItems() {
   const [activeIndex, setActiveIndex] = useState(0)
