@@ -30,6 +30,7 @@ export default function ContactForm() {
 
   const processForm: SubmitHandler<Inputs> = async data => {
     const result = await sendEmail(data)
+    console.log(`🚀 ~ file: contactForm.tsx:34 ~ ContactForm ~ result:`, result)
 
     if (result?.error) {
       toast.error('An error occurred! Please try again.')

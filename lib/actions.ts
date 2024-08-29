@@ -8,6 +8,10 @@ import ContactFormEmail from '@/email/contactFormEmail'
 type ContactFormInputs = z.infer<typeof ContactFormSchema>
 const resend = new Resend(process.env.RESEND_API_KEY)
 
+export async function createDomain(data: ContactFormInputs) {
+  resend.domains.create({ name: 'danielstadler.com' });
+}
+
 export async function sendEmail(data: ContactFormInputs) {
   const result = ContactFormSchema.safeParse(data)
 
@@ -19,10 +23,10 @@ export async function sendEmail(data: ContactFormInputs) {
     const { name, email, message } = result.data
     const response = await resend.emails.send({
       from: 'danstad2012@gmail.com',
-      to: [email],
+      to: ['danstad2012@gmail.com'],
       cc: ['danstad2012@gmail.com'],
-      subject: 'Contact form submission',
-      text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`,
+      subject: `Contact form submission from ${name}`,
+      text: `Email: ${email}\nMessage: ${message}`,
       react: ContactFormEmail({ name, email, message })
     })
 
