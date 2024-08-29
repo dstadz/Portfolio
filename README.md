@@ -1,4 +1,4 @@
-# Portfolio Blog Starter
+# Portfolio
 
 This is a simple porfolio site using Nextjs!
 
