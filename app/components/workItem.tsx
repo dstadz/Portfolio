@@ -18,10 +18,10 @@ export function WorkItems() {
       {workList.map((work, idx) => (
         <div
           key={work.company}
-          className="flex flex-col w-50 space-y-1 mb-4 border-2 border-blue-200 border-solid p-4 bg-gray-100 rounded-lg"
+          className="flex flex-col w-50 space-y-1 mb-4 border-2 border-blue-200 border-solid p-4 bg-gray-800 rounded-lg"
         >
           <div  //header
-            className="flex justify-between items-center bg-gray-200 rounded-lg"
+            className="flex justify-between items-center bg-gray-00 rounded-lg"
             onClick={() => setActiveIndex(prev => prev === idx ? -1 : idx)}
           >
             <Image
