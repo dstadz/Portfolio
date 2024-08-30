@@ -62,7 +62,7 @@ export function WorkItems() {
             {work?.gallery?.length ? (
               <div className="my-8">
               <p className='mb-4'>Gallery</p>
-              {work?.gallery?.map(({ img, alt, desc }) => (
+              {work?.gallery?.map(({ img, alt, description }) => (
                 <div
                   key={img}
                   className="bg-gray-600 mb-4 p-4 rounded-lg"
@@ -77,7 +77,7 @@ export function WorkItems() {
                     decoding="async"
                     key={img}
                   />
-                  <p className='mt-4'>{desc}</p>
+                  <p className='mt-4'>{description}</p>
                 </div>
               ))}
             </div>

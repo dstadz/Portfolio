@@ -3,7 +3,7 @@
 import { z } from 'zod'
 import { Resend } from 'resend'
 import { ContactFormSchema } from '@/lib/schemas'
-import ContactFormEmail from '@/email/contactFormEmail'
+import ContactFormEmail from '@/email/contact-form-email';
 
 type ContactFormInputs = z.infer<typeof ContactFormSchema>
 const resend = new Resend(process.env.RESEND_API_KEY)

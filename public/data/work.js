@@ -13,12 +13,12 @@ export const workObject = {
       {
         img: 'pay and print.png',
         alt: 'Pay and Print',
-        desc: 'I developed a Pay and Print button that allows users to process incoming materials, pay the customer and print their receipts without leaving the screen. This feature was adopted by 90% of our users in the first week',
+        description: 'I developed a Pay and Print button that allows users to process incoming materials, pay the customer and print their receipts without leaving the screen. This feature was adopted by 90% of our users in the first week',
       },
       {
         img: 'gssSalesOrder.jpg',
         alt: 'Duplicate Contract was an idea I implemented while ',
-        desc: ' I created the Duplicate feature for sales and purchase orders after asking for feeeback from our customers. This button saved our users up to 80% of the time they spend on writing up new contracts.',
+        description: ' I created the Duplicate feature for sales and purchase orders after asking for feeeback from our customers. This button saved our users up to 80% of the time they spend on writing up new contracts.',
       },
       // {
       //   img: '/images/greenspark/3.png',
@@ -48,6 +48,10 @@ export const workObject = {
     location: 'San Francisco, CA',
     detail: 'Bumblebee Spaces was where I truly saw how technology can transform everyday living spaces. I learned how to merge hardware and software seamlessly, making user-centric designs that felt almost magical in their efficiency. Implementing features like Auto-Discover and integrating Stripe API for preorder processes taught me the importance of optimizing user flows and reducing friction in customer interactions. This role solidified my ability to modernize app architectures and create intuitive, delightful user experiences.',
     value: 'At Bumblebee Spaces, I added value by integrating the Stripe API, which doubled preorders and streamlined the purchasing process. I also implemented the Auto-Discover feature, reducing installation time by 20% and significantly enhancing the user experience. By modernizing the app architecture, I improved code usability and collaborated with designers to create intuitive user flows that boosted customer satisfaction by 40%. This role allowed me to deliver tangible improvements that directly benefited both the company and its customers.',
-    gallery: [],
+    gallery: [{
+      img: 'bbs phone row.jpg',
+      alt: 'Siri Integration, Object Detection, Auto-Discover',
+      description: "Showcased innovative enhancements with Siri Integration, Object Detection, and Auto-Discover. These cutting-edge features accelerated item delivery by an impressive 50%, demonstrating a strong commitment to optimizing user experience and operational efficiency."
+    },],
   },
 }
