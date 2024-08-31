@@ -22,9 +22,9 @@ export async function sendEmail(data: ContactFormInputs) {
   try {
     const { name, email, message } = result.data
     const response = await resend.emails.send({
-      from: 'danstad2012@gmail.com',
-      to: ['danstad2012@gmail.com'],
-      cc: ['danstad2012@gmail.com'],
+      from: 'contact@danielstadler.com',
+      to: ['contact@danielstadler.com'],
+      cc: ['contact@danielstadler.com'],
       subject: `Contact form submission from ${name}`,
       text: `Email: ${email}\nMessage: ${message}`,
       react: ContactFormEmail({ name, email, message })
