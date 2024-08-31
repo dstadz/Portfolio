@@ -19,10 +19,10 @@ export function WorkItems() {
       {workList.map((work, idx) => (
         <div
           key={work.company}
-          className="flex flex-col w-50 space-y-1 mb-4 border-2 border-blue-200 border-solid p-4 bg-gray-900 rounded-lg"
+          className="flex flex-col w-50 space-y-1 mb-4 border-2 border-blue-800 border-solid p-4 bg-gray-800 rounded-lg"
         >
           <div  //header
-            className="flex justify-between items-center bg-gray-700 rounded-lg"
+            className="flex justify-between items-center border-2 border-blue-800 rounded-lg"
             onClick={() => setActiveIndex(prev => prev === idx ? -1 : idx)}
           >
             <Image
@@ -35,16 +35,14 @@ export function WorkItems() {
               className='rounded-tl-lg rounded-bl-lg'
               sizes="(max-width: 768px) 100vw, 33vw"
             />
-            <div className="flex flex-col flex-1 ml-4">
-              <p className="text-neutral-600 dark:text-neutral-100">
+            <div className="flex flex-col justify-between rounded-lg p-3 border-l-0 w-full h-full rounded-tl-none rounded-bl-none">
+              <h3 className="text-neutral-300 text-lg tabular-nums">
               {work.position} at {work.company}
-              </p>
-              <span>
+                {/* {formatDate(work.metadata.publishedAt, false)} */}
+              </h3>
+              <h4 className="">
                 {work.date} {work.location}
-              </span>
-              <p className="">
-                {work.tech.map(x => `${x} `)}
-              </p>
+              </h4>
             </div>
             <span className='mr-4'> {idx === activeIndex ? '^' : 'v'} </span>
           </div>
