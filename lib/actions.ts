@@ -21,11 +21,11 @@ export async function sendEmail(data: ContactFormInputs) {
 
   try {
     const { name, email, message } = result.data
+
     const response = await resend.emails.send({
       from: 'contact@danielstadler.com',
-      to: ['contact@danielstadler.com'],
-      cc: ['contact@danielstadler.com'],
-      subject: `Contact form submission from ${name}`,
+      to: ['danielstadlerx@gmail.com'],
+      subject: `site contact from ${name}`,
       text: `Email: ${email}\nMessage: ${message}`,
       react: ContactFormEmail({ name, email, message })
     })
