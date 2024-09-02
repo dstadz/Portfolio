@@ -1,8 +1,6 @@
-import { BlogPosts } from 'app/components/posts'
-
 export default function Page() {
   return (
-    <section>
+    <section className="bg-grey-900">
       <h1 className="mb-8 text-2xl font-semibold tracking-tighter">
       Daniel Stadlers Portfolio
       </h1>
@@ -13,7 +11,6 @@ export default function Page() {
         I'm always eager to explore new technologies, with a knack for understanding user needs and crafting solutions that make a difference.
       </p>
       <div className="my-8">
-        {/* <BlogPosts /> */}
       </div>
     </section>
   )

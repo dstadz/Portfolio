@@ -1,14 +1,15 @@
 "use client"
 
-import Link from 'next/link'
-import { formatDate } from 'app/blog/utils'
 import Image from 'next/image'
-import { workObject } from 'app/data/work'
+import { workObject } from '@/public/data/work'
 import { useState } from 'react'
 
-const workList = Object
-  .keys(workObject)
-  .map(slug => ({ slug, ...workObject[slug] }) )
+const workList = Object.keys(workObject).map((slug) => {
+  const key = slug as keyof typeof workObject
+
+  return { slug: key, ...workObject[key] }
+})
+
 
 export function WorkItems() {
   const [activeIndex, setActiveIndex] = useState(0)
@@ -32,6 +33,7 @@ export function WorkItems() {
               loading="lazy"
               decoding="async"
               className='rounded-tl-lg rounded-bl-lg'
+              sizes="(max-width: 768px) 100vw, 33vw"
             />
             <div className="flex flex-col justify-between rounded-lg p-3 border-l-0 w-full h-full rounded-tl-none rounded-bl-none">
               <h3 className="text-neutral-300 text-lg tabular-nums">
@@ -46,21 +48,19 @@ export function WorkItems() {
           </div>
 
           {activeIndex === idx && <section>
-            <p className="mb-4">
-              {work.tech.map(x => `${x} `)}
-            </p>
           <div className="w-full flex flex-col md:flex-row space-x-0 md:space-x-2">
             <p className="text-neutral-900 dark:text-neutral-100 tracking-tight">
               {work.description}
             </p>
           </div>
 
-            <div className="my-8">
+            <div className="my-4">
               {work.detail}
             </div>
-            <div className="my-8">
+            {work?.gallery?.length ? (
+              <div className="my-8">
               <p className='mb-4'>Gallery</p>
-              {work?.gallery?.map(({ img, alt, desc }) => (
+              {work?.gallery?.map(({ img, alt, description }) => (
                 <div
                   key={img}
                   className="bg-gray-600 mb-4 p-4 rounded-lg"
@@ -75,10 +75,11 @@ export function WorkItems() {
                     decoding="async"
                     key={img}
                   />
-                  <p className='mt-4'>{desc}</p>
+                  <p className='mt-4'>{description}</p>
                 </div>
               ))}
             </div>
+            ): null}
           </section>}
         </div>
       ))}
